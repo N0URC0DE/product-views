@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Widget:etc/widget.xsd">
+	<widget class="Nourcode\ProductViews\Block\MostViewProduct" id="nourcode_most_viewed_products">
+		<label>Most Viewed Products</label>
+		<description>Most Viewed Products Slider</description>
+        <parameters>
+            <parameter name="title" xsi:type="text" visible="true" required="true" sort_order="1" >
+                <label>Title</label>
+                 <description translate="true">Title for most viewed products</description>
+            </parameter>
+            <parameter name="select_category"  xsi:type="multiselect" required="true" visible="true" 
+                sort_order="2" source_model="Nourcode\ProductViews\Model\Config\Source\CategoryList">
+                <label translate="true">Select Categories</label>
+                <description translate="true">Category must be selected for most viewed products</description>
+            </parameter>
+        </parameters>
+	</widget>
+</widgets>

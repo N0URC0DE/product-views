@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="../../../Backend/etc/menu.xsd">
+    <menu>
+        <add id="Nourcode_ProductViews::productviews" 
+            title="Manage Product Views" 
+            module="Nourcode_ProductViews"
+            sortOrder="5" 
+            resource="Magento_Backend::content" />
+        <add id="Nourcode_ProductViews::productviews_item"
+            title="Product Views"
+            parent="Nourcode_ProductViews::productviews"
+            module="Nourcode_ProductViews"
+            sortOrder="5"
+            action="adminhtml/system_config/edit/section/productviews"
+            resource="Nourcode_ProductViews::productviews_item" />
+    </menu>
+</config>

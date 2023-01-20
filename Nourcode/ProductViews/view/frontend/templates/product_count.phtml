@@ -1,0 +1,15 @@
+<?php
+/**
+ * @var Nourcode\ProductViews\Block\ProductViewCount $block
+ */
+
+$productId = $block->getProductID();
+$ProductCount = $block->getProductCount($productId);
+$helper = \Magento\Framework\App\ObjectManager::getInstance()->get('Nourcode\ProductViews\Helper\Data'); 
+?>
+<?php if($helper->isEnable()) : ?>
+    <div class="stock available" title="<?= __('Number of views'); ?>">
+        <b><?= __('Number of views'); ?>: </b>
+        <span ><?= $ProductCount; ?></span>
+    </div>
+<?php endif; ?>

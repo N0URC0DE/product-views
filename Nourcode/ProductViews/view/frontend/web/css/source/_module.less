@@ -1,0 +1,109 @@
+@import '_slick.less';
+@basePath: '../Noorcode_ProductViews/';
+.most_viewed_products_slider {
+	.slick-slide{
+		padding: 1px;
+		margin-bottom: 35px;
+	}
+
+	.slick-arrow {
+		background: none;
+		transform: translate(0, -50%);
+		position: absolute;
+		left: 0;
+		top: 45%;
+		border: 0;
+		z-index: 3;
+		color: #000;
+		box-shadow: none !important;
+		border-radius: 0;
+		margin-top: -3px;
+		font-size: 0;
+		height: 60px;
+		line-height: 60px;
+		padding: 0;
+		width: 50px;
+		text-align: center;
+		&:focus {
+			background: none;
+			color: #000;
+			border: 0;
+			opacity: 0.8;
+		}
+		&:active {
+			background: none;
+			color: #000;
+			border: 0;
+			opacity: 0.8;
+		}
+	}
+
+	.slick-arrow.slick-next {
+		display: inherit;
+		background-repeat: no-repeat !important;
+		background: url('@{basePath}images/right-arrow.png');
+		left: inherit;
+		position: absolute;
+		font-size: 0 !important;
+		right: -47px;
+		transition: all .3s ease;
+		top: 50%;
+		&:hover {
+			color: #000;
+			border: 0;
+			opacity: 0.8;
+		}
+	}
+
+	.slick-arrow.slick-prev {
+		display: inherit;
+		background-repeat: no-repeat !important;
+		background: url('@{basePath}images/left-arrow.png');
+		left: 2px;
+		position: absolute;
+		font-size: 0 !important;
+		left: -27px;
+		transition: all .3s ease;
+		top: 50%;
+		&:hover {
+			color: #000;
+			border: 0;
+			opacity: 0.8;
+		}
+	}
+
+	.slick-slider {
+		&:hover {
+			.slick-arrow.slick-next {
+			   right: -47px;
+			}
+			.slick-arrow.slick-prev {
+				left: -27px;
+			}
+		}
+	}
+
+	.slick-arrow.slick-prev:after {
+		font-size: 0px !important;
+	}
+}
+
+.most-viewed-products-slider {
+    margin: 15px 0;
+  	padding: 9px !important;
+}
+
+.most-viewed-products-slider-container {
+    max-width: 1260px;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.most-viewed-products-slider-image-container {
+    width:205px;
+}
+
+.most-viewed-products-slider-image-wrapper {
+    padding-bottom: 125%;
+}

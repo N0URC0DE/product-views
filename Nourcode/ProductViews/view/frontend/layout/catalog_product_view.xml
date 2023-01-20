@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="product.info.type">
+            <block class="Nourcode\ProductViews\Block\ProductViewCount" name="nourcode.product.view.count"
+                template="Nourcode_ProductViews::product_count.phtml" before="-"/>
+        </referenceContainer>
+    </body>
+</page>

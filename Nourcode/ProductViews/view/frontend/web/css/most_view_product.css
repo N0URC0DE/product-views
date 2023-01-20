@@ -1,0 +1,13 @@
+.most-viewed-products-slider .title {
+    border-bottom: 1px solid #ddd;
+}
+
+.most-viewed-products-slider .widget {
+    margin-top: 0 !important;
+}
+
+.container.most-viewed-products-slider ,
+.most-viewed-products-slider .slick-slide ,
+.most-viewed-products-slider .slick-slide .product-item {
+    margin-bottom: 0 !important;
+}

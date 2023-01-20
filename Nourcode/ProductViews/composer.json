@@ -1,0 +1,36 @@
+{
+    "name": "nourcode/product-views",
+    "version": "1.0.0",
+    "description": "N/A",
+    "type": "magento2-module",
+    "require": {
+      "php": "~7.0.13|~7.1.0|~7.2.0|~7.3.0|~7.4.0|^8.0"
+    },
+    "license": [
+      "Proprietary"
+    ],
+    "autoload": {
+      "files": [
+        "registration.php"
+      ],
+      "psr-4": {
+        "Nourcode\\ProductViews\\": ""
+      }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1.x-dev"
+        }
+    },
+    "repositories": {
+        "0": {
+            "type": "composer",
+            "url": "https://repo.magento.com/"
+        },
+        "nourcode-module-product-views": {
+            "type": "git",
+            "url": "https://github.com/nourscode/product-views.git"
+        }
+    }
+  }
+  
